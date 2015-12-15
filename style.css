@@ -3,7 +3,7 @@
 
 
 html, body {
-    max-width: 600px;
+    
     margin: 0;
     padding: 0;
     overflow:scroll;
@@ -18,13 +18,18 @@ html, body {
     
 }
 */
+
+.fullpage {
+    max-width: 600px;
+    margin: 0 auto;   
+}
 header {
     padding: 12px 20px;
     background-color: #fff;
     color: #525252;
     font-size: 12px;
     font-weight: 500;
-    font-family: 'Roboto Slab', serif;
+    font-family: arial;
     overflow: auto;
 }
 
@@ -40,7 +45,7 @@ header {
     color: #525252;
     font-size: 12px;
     font-weight: 500;
-    font-family: 'Roboto Slab', serif;
+    font-family: arial;
     text-decoration: none;
 }
 
@@ -83,12 +88,12 @@ header {
     font-size: 40px;
     font-weight: 300;
     text-transform: uppercase;
-    font-family: 'Roboto Slab', serif;
+    font-family: arial;
     line-height: 100%;
 }
 
 #slide1 .subtitle {
-    font-family: 'Roboto', serif;
+    font-family: arial;
     font-size: 25px;
 }
 
@@ -104,7 +109,7 @@ header {
 .footer-part p {
     font-size: 13px;
     font-weight: bold;
-    font-family: 'Roboto Slab', serif;
+    font-family: arial;
 }
 
 .mailing-address-left, .mailing-address-right {
@@ -116,7 +121,7 @@ header {
     line-height: 30px;
     font-size: 13px;
     font-weight: 500;
-    font-family: 'Roboto Slab', serif;
+    font-family: arial;
 }
 
 .mailing-address-left {
@@ -137,7 +142,7 @@ header {
     color: #eeeeee;
     font-size: 13px;
     font-weight: bold;
-    font-family: 'Roboto Slab', serif;
+    font-family: arial;
 }
 
 .footer-lower-part a.mright20 {
