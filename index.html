@@ -66,7 +66,9 @@
         #slide1 {
             padding-bottom: 30px;
             position: relative;
-            background: #525252 url("http://webbio-concepten.nl/elpical_newsletter/images/footer-bg.png") no-repeat;
+            background-color: #525252;
+            background-image: url("http://webbio-concepten.nl/elpical_newsletter/images/footer-bg.png");
+            background-repeat: no-repeat;
             background-position: right bottom -75px;
             color: #eeeeee;
             text-align: center;
@@ -79,17 +81,17 @@
             right: 0;
             width: 100%;
         }*/
-
+/*
         .logo {
             position: absolute;
             top: 0;
             left: 20px;
             width: 305px;
             height: 115px;
-        }
+        }*/
 
         .chrismas-logo {
-            margin: 200px 0 80px 0;
+            margin: 80px 0 80px 0;
         }
 
         .page-content {
@@ -228,9 +230,12 @@
         </header>
         <div class="section" id="slide1">
             <!-- <img src="http://webbio-concepten.nl/elpical_newsletter/images/topbar.png" class="topbar" /> -->
-            <img src="http://webbio-concepten.nl/elpical_newsletter/images/logo.png" class="logo" />
-            <img src="http://webbio-concepten.nl/elpical_newsletter/images/icon-elpical.png" class="chrismas-logo">
-
+            <table style="width:100%;">
+                <tbody>
+                    <tr style="text-align:left;"><td><img src="http://webbio-concepten.nl/elpical_newsletter/images/logo.png" class="logo" style="width:290px;" /></td></tr>
+                    <tr style="text-align:center;"><td><img src="http://webbio-concepten.nl/elpical_newsletter/images/icon-elpical.png" class="chrismas-logo"></td></tr>
+                </tbody>
+            </table>
             <div class="page-content">
                 <div class="title">
                     <span>Dear Sir, Madam,</span>
@@ -254,14 +259,14 @@
                         <li>NIJVERHEIDSSTRAAT 9</li>
                         <li>6987 EN GIESBEEK</li>
                         <li>+31 (0) 313 633 156</li>
-                        <li><a href="mailto:INFO@ELPICAL.COM">INFO@ELPICAL.COM</a></li>
+                        <li><a href="mailto:INFO@ELPICAL.COM" style="color: #ffffff;">INFO@ELPICAL.COM</a></li>
                     </ul>
                     <ul class="mailing-address-right">
                         <li><strong>ELPICAL GERMANY</strong></li>
                         <li>SCHILLERSTR. 35</li>
                         <li>90547 STEIN</li>
                         <li>+49 911 252 98 87</li>
-                        <li><a href="mailto:INFO@ELPICAL.COM">INFO@ELPICAL.COM</a></li>
+                        <li><a href="mailto:INFO@ELPICAL.COM" style="color: #ffffff;">INFO@ELPICAL.COM</a></li>
                     </ul>
                 </div>
                 <div class="footer-lower-part">
