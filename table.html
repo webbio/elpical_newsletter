@@ -14,7 +14,6 @@ li {
 }
 .main {
 	background-color: #525252;
-	background-image: url(http://webbio-concepten.nl/elpical_newsletter/images/footer-bg.png);
 	background-repeat: no-repeat;
 	background-position: right bottom;
 	color:#fff;
@@ -42,7 +41,7 @@ li {
 }
 
 .title {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 300;
   text-transform: uppercase;
   font-family: Verdana;
@@ -52,7 +51,7 @@ li {
 
 .subtitle {
   font-family: arial;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 26px;
   color: #ffffff;
 }
@@ -65,6 +64,10 @@ li {
   padding: 0 25px;
 }
 
+.mailing-address-text {
+  margin: 30px 0;
+}
+
 .elpical-software-team-title {
   font-family: Trebuchet MS;
 }
@@ -72,6 +75,15 @@ li {
 hr {
   width: 60%;
   margin: 50px auto;
+}
+
+.mailing-address-left {
+  padding: 0 12px 0 0;
+}
+
+.mailing-address-right {
+  text-align:left;
+  padding: 0 0 0 12px;
 }
 
 .footer-part {
@@ -86,12 +98,25 @@ hr {
   line-height: 30px;
 }
 
+.footer-part ul a {
+  text-decoration: none;
+}
+
+.mright20 {
+  margin-right: 20px;
+}
+
+.mtop40bottom10 {
+  display: inline-block;
+  margin: 40px 0 10px 0;
+}
+
 </style>
 
 </head>
 
 <body>
-<table width="600" border="0" cellpadding="0" cellspacing="0" class="main">
+<table width="600" border="0" cellpadding="0" cellspacing="0" class="main" background="http://webbio-concepten.nl/elpical_newsletter/images/footer-bg.png">
 
   <tr>
     <td  align="left">
@@ -107,7 +132,7 @@ hr {
     <td  align="left" class="logo-td"><img src="http://webbio-concepten.nl/elpical_newsletter/images/logo.png" class="logo"></td>
   </tr>
   <tr>
-    <td height="249" align="center"><img src="http://webbio-concepten.nl/elpical_newsletter/images/icon-elpical.png" class="chrismas-logo" /></td>
+    <td height="200" align="center"><img src="http://webbio-concepten.nl/elpical_newsletter/images/icon-elpical.png" class="chrismas-logo" /></td>
   </tr>
   <tr>
     <td class="pad-lr25"><h2 class="title">DEAR SIR, MADAM,</h2>
@@ -133,14 +158,14 @@ hr {
     <p class="mailing-address-text">Our mailing address is: </p>
     <table width="600" border="0">
       <tr>
-        <td width="249" align="right"><ul class="mailing-address-left">
+        <td width="280" align="right"><ul class="mailing-address-left">
           <li><strong>ELPICAL NETHERLANDS</strong></li>
           <li>NIJVERHEIDSSTRAAT 9</li>
           <li>6987 EN GIESBEEK</li>
           <li>+31 (0) 313 633 156</li>
           <li><a href="mailto:INFO@ELPICAL.COM">INFO@ELPICAL.COM</a></li>
         </ul></td>
-        <td width="335" align="left"><ul class="mailing-address-right">
+        <td width="280" align="left"><ul class="mailing-address-right">
           <li><strong>ELPICAL GERMANY</strong></li>
           <li>SCHILLERSTR. 35</li>
           <li>90547 STEIN</li>
@@ -154,7 +179,7 @@ hr {
   
   </tr>
   <tr class="footer-part">
-    <td align="center"><a href="#">Add us to your adressbook</a></td>
+    <td align="center"><a href="#" class="mtop40bottom10">Add us to your adressbook</a></td>
   </tr>
   <tr>
     <td>
@@ -162,7 +187,7 @@ hr {
     <table width="600" border="0">
       <tr class="footer-part">
         <td align="right"><a href="#" class="mright20">unsubscribe form this list</a></td>
-        <td align="left">    <a href="#">update subscription preferences</a></td>
+        <td align="left"><a href="#">update subscription preferences</a></td>
       </tr>
       <tr><td>&nbsp;</td></tr>
     </table></td>
