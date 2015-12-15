@@ -19,207 +19,201 @@
   <!--   <link rel="stylesheet" type="text/css" href="style.css"> -->
   <style type="text/css" media="screen">
 
-/* New CSS Code -----------------------------*/
+        html, body {
+            
+            margin: 0;
+            padding: 0;
+            overflow:scroll;
+            /*Avoid flicker on slides transitions for mobile phones #336 */
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            color: #eeeeee;
+        }
 
+        .fullpage {
+            max-width: 600px;
+            margin: 0 auto;   
+        }
+        header {
+            padding: 12px 20px;
+            background-color: #fff;
+            color: #525252;
+            font-size: 12px;
+            font-weight: 500;
+            font-family: arial;
+            overflow: auto;
+            background-image: url("http://webbio-concepten.nl/elpical_newsletter/images/topbar.png");
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
 
-html, body {
-    
-    margin: 0;
-    padding: 0;
-    overflow:scroll;
-    /*Avoid flicker on slides transitions for mobile phones #336 */
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    color: #eeeeee;
-}
-/*
-.fullpage {
-    width: 100%;
-    background-color: #525252;
-    
-}
-*/
+        .header-end {
+            float: left;
+        }
 
-.fullpage {
-    max-width: 600px;
-    margin: 0 auto;   
-}
-header {
-    padding: 12px 20px;
-    background-color: #fff;
-    color: #525252;
-    font-size: 12px;
-    font-weight: 500;
-    font-family: arial;
-    overflow: auto;
-}
+        .header-view {
+            float: right;
+        }
 
-.header-end {
-    float: left;
-}
+        .header-view a {
+            color: #525252;
+            font-size: 12px;
+            font-weight: 500;
+            font-family: arial;
+            text-decoration: none;
+        }
 
-.header-view {
-    float: right;
-}
+        #slide1 {
+            padding-bottom: 30px;
+            position: relative;
+            background: #525252 url("http://webbio-concepten.nl/elpical_newsletter/images/footer-bg.png") no-repeat;
+            background-position: right bottom -75px;
+            color: #eeeeee;
+            text-align: center;
+        }
 
-.header-view a {
-    color: #525252;
-    font-size: 12px;
-    font-weight: 500;
-    font-family: arial;
-    text-decoration: none;
-}
+       /* .topbar {
+            position: absolute;
+            top: 1;
+            left: 0;
+            right: 0;
+            width: 100%;
+        }*/
 
-#slide1 {
-    padding-bottom: 30px;
-    position: relative;
-    background: #525252 url("images/footer-bg.png") no-repeat;
-    background-position: right bottom -75px;
-    color: #eeeeee;
-    text-align: center;
-}
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 20px;
+            width: 305px;
+            height: 115px;
+        }
 
-.topbar {
-    position: absolute;
-    top: 1;
-    left: 0;
-    right: 0;
-    width: 100%;
-}
+        .chrismas-logo {
+            margin: 200px 0 80px 0;
+        }
 
-.logo {
-    position: absolute;
-    top: 0;
-    left: 20px;
-    width: 305px;
-    height: 115px;
-}
+        .page-content {
+            padding: 0 25px;
+            text-align: left;
+        }
 
-.chrismas-logo {
-    margin: 200px 0 80px 0;
-}
+        #slide1 .title {
+            font-size: 40px;
+            font-weight: 300;
+            text-transform: uppercase;
+            font-family: Verdana;
+            line-height: 100%;
+        }
 
-.page-content {
-    padding: 0 25px;
-    text-align: left;
-}
+        #slide1 .subtitle {
+            font-family: arial;
+            font-size: 18px;
+                line-height: 26px;
+        }
 
-#slide1 .title {
-    font-size: 40px;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-family: Verdana;
-    line-height: 100%;
-}
+        #slide1 hr {
+            width: 60%;
+            margin: 50px auto;
+        }
 
-#slide1 .subtitle {
-    font-family: arial;
-    font-size: 18px;
-        line-height: 26px;
-}
+        .elpical-software-team-title {
+                font-family: Trebuchet MS;
+        }
 
-#slide1 hr {
-    width: 60%;
-    margin: 50px auto;
-}
+        .footer-part {
+            text-align: center;
+        }
 
-.elpical-software-team-title {
-        font-family: Trebuchet MS;
-}
+        .footer-part p {
+            font-size: 13px;
+            font-weight: bold;
+            font-family: arial;
+        }
 
-.footer-part {
-    text-align: center;
-}
+        .mailing-address-left, .mailing-address-right {
+            padding: 0 0 40px 0;
+            margin: 0;
+            width: 45%;
+            float: left;
+            list-style: none;
+            line-height: 30px;
+            font-size: 13px;
+            font-weight: 500;
+            font-family: arial;
+        }
 
-.footer-part p {
-    font-size: 13px;
-    font-weight: bold;
-    font-family: arial;
-}
+        .mailing-address-left {
+            text-align:right;
+            padding-right:20px;
+        }
 
-.mailing-address-left, .mailing-address-right {
-    padding: 0 0 40px 0;
-    margin: 0;
-    width: 45%;
-    float: left;
-    list-style: none;
-    line-height: 30px;
-    font-size: 13px;
-    font-weight: 500;
-    font-family: arial;
-}
+        .mailing-address-right {
+            text-align:left;
+            padding-left:20px;
+        }
 
-.mailing-address-left {
-    text-align:right;
-    padding-right:20px;
-}
+        .mailing-address-text {
+            margin: 30px 0;
+        }
 
-.mailing-address-right {
-    text-align:left;
-    padding-left:20px;
-}
+        .footer-lower-part a {
+            color: #eeeeee;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: arial;
+        }
 
-.mailing-address-text {
-    margin: 30px 0;
-}
+        .footer-lower-part a.mright20 {
+            margin-right: 20px;
+        }
 
-.footer-lower-part a {
-    color: #eeeeee;
-    font-size: 13px;
-    font-weight: bold;
-    font-family: arial;
-}
+        @media screen and (max-width: 405px) {
+            .footer-lower-part a {
+                display: block;
+            }
+            .footer-lower-part a.mright20 {
+                margin-right: 0;
+                margin-bottom: 12px;
+            }
 
-.footer-lower-part a.mright20 {
-    margin-right: 20px;
-}
+            header, .header-view a {
+                padding: 10px 15px;
+                font-size: 10px;
+            }
+            .logo {
+                width: 275px;
+                height: auto;
+            }
 
-@media screen and (max-width: 405px) {
-    .footer-lower-part a {
-        display: block;
-    }
-    .footer-lower-part a.mright20 {
-        margin-right: 0;
-        margin-bottom: 12px;
-    }
+            .chrismas-logo {
+                margin: 175px 0 60px 0;
+                width: 125px;
+            }
+            #slide1 .title {
+                font-size: 30px;
+            }
 
-    header, .header-view a {
-        padding: 10px 15px;
-        font-size: 10px;
-    }
-    .logo {
-        width: 275px;
-        height: auto;
-    }
+            #slide1 .subtitle {
+                font-size: 21px;
+            }
 
-    .chrismas-logo {
-        margin: 175px 0 60px 0;
-        width: 125px;
-    }
-    #slide1 .title {
-        font-size: 30px;
-    }
+            #slide1 {
+                background-size: 100%;
+            }
 
-    #slide1 .subtitle {
-        font-size: 21px;
-    }
+            .mailing-address-left, .mailing-address-right {
+                width: 46%;
+                font-size: 12px;
+            }
 
-    #slide1 {
-        background-size: 100%;
-    }
+            .mailing-address-left {
+                padding-right: 8px;
+            }
 
-    .mailing-address-left, .mailing-address-right {
-        width: 46%;
-        font-size: 12px;
-    }
-
-    .mailing-address-left {
-        padding-right: 8px;
-    }
-
-    .mailing-address-right {
-        padding-left: 8px;
-    }
-}
+            .mailing-address-right {
+                padding-left: 8px;
+            }
+        }
       
   </style>
 
@@ -233,9 +227,9 @@ header {
             <span class="header-view"><a href="#">View this e-mail in your browser</a></span>
         </header>
         <div class="section" id="slide1">
-            <img src="images/topbar.png" class="topbar" />
-            <img src="images/logo.png" class="logo" />
-            <img src="images/icon-elpical.png" class="chrismas-logo">
+            <!-- <img src="http://webbio-concepten.nl/elpical_newsletter/images/topbar.png" class="topbar" /> -->
+            <img src="http://webbio-concepten.nl/elpical_newsletter/images/logo.png" class="logo" />
+            <img src="http://webbio-concepten.nl/elpical_newsletter/images/icon-elpical.png" class="chrismas-logo">
 
             <div class="page-content">
                 <div class="title">
@@ -260,14 +254,14 @@ header {
                         <li>NIJVERHEIDSSTRAAT 9</li>
                         <li>6987 EN GIESBEEK</li>
                         <li>+31 (0) 313 633 156</li>
-                        <li>INFO@ELPICAL.COM</li>
+                        <li><a href="mailto:INFO@ELPICAL.COM">INFO@ELPICAL.COM</a></li>
                     </ul>
                     <ul class="mailing-address-right">
                         <li><strong>ELPICAL GERMANY</strong></li>
                         <li>SCHILLERSTR. 35</li>
                         <li>90547 STEIN</li>
                         <li>+49 911 252 98 87</li>
-                        <li>INFO@ELPICAL.COM</li>
+                        <li><a href="mailto:INFO@ELPICAL.COM">INFO@ELPICAL.COM</a></li>
                     </ul>
                 </div>
                 <div class="footer-lower-part">
